@@ -143,10 +143,22 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   operationButton('/'),
                 ],
               ),
-              Divider(),
-              Text(
-                'Hasil = $result',
-                style: TextStyle(fontSize: 30),
+              Divider(
+                height: 1,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Hasil:',
+                    style: TextStyle(fontSize: 30),
+                  ),
+                  Text(
+                    '$result',
+                    style: TextStyle(fontSize: 30),
+                  ),
+                ],
               )
             ],
           ),
